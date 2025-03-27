@@ -57,24 +57,20 @@ Uses re-fetching strategies to keep data fresh.
 ### Step 3: Configure API Slice for Api request
 
 Create a file in src folder: redux/features/skip/skipAPi.ts
-![skipApi](/images/skipApi.png)
 
 ### Step 4: Create Redux Slice for Selected Item
 
 Create a file in src folder: redux/features/skip/skipSlice.ts
-![skipSlice](/images/skipSlice.png)
 
 Since we need to track the selected skip, we use Redux state management.
 
 ### Step 5: Create types for static types
 
 Create a file in src folder: redux/features/skip/types.d.ts
-![types](/images/types.png)
 
 ### Configure Redux Store
 
 Create a file in src folder: Redux/app/store.ts
-![store](/images/store.png)
 
 Wrap app in Provider inside main.tsx and pass the imported store as props
 
@@ -93,7 +89,7 @@ Wrap app in Provider inside main.tsx and pass the imported store as props
 
 - Indicate the selected card by adding a blue border to the selected card, invert the button background color and remove the border when unselected.
 
-- When a card is selected, the selected skip flag is set to true and a bottom drawer smoothly appears to display the total cost which is a derivative of the summation of Vat and price_before_vat.
+- When a card is selected, the selected skip flag is set to true and a bottom drawer smoothly appears to display the total cost which the summation of "Vat" and "price_before_vat".
 
 - Check if "transport_cost", "per_tonne_cost", and area are not equal to null or undefined
 
