@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-Merriweather: Merriweather, sans-serif;
+  --font-Montserrat: Montserrat, sans-serif;
+}
