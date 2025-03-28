@@ -25,7 +25,7 @@ const Skip = () => {
   }
 
   return (
-    <div className="container mx-auto py-10 px-5 lg:px-0">
+    <div className="container mx-auto py-10 px-5">
       <Breadcrumb />
       <div className="mt-10">
         <h2 className="text-3xl text-gray-700 font-bold text-center mb-4 font-Merriweather">
@@ -42,7 +42,7 @@ const Skip = () => {
               <Loader />
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {data &&
                 data.map((skip) => (
                   <div key={skip.id}>
@@ -319,7 +319,7 @@ const Skip = () => {
                       </button>
                       <button
                         type="button"
-                        className="py-1 px-3 border border-blue-500 bg-blue-500 text-white rounded-lg text-sm font-semibold hover:text-[#f7f8f9] lg:text-base lg:px-10 md:py-3 cursor-pointer hover:border-[#f7f8f9]"
+                        className="py-1 px-3 border border-blue-500 bg-blue-500 text-white rounded-lg text-sm font-semibold hover:text-[#f7f8f9] lg:text-base lg:px-10 lg:py-3 cursor-pointer hover:border-[#f7f8f9]"
                       >
                         Continue
                       </button>
