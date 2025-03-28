@@ -39,7 +39,7 @@ const Breadcrumb = () => {
               initial={{ width: 0 }}
               animate={{ width: '2.5rem' }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className={`relative h-[2px] mx-2 ${
+              className={`relative h-[2px] mx-2 hidden sm:block ${
                 step.completed ? 'bg-blue-500' : 'bg-gray-400'
               }`}
             >
@@ -47,7 +47,7 @@ const Breadcrumb = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.2 }}
-                className={`absolute -top-1 left-0 w-2 h-2 rounded-full ${
+                className={`absolute -top-1 left-0 w-2 h-2 rounded-full hidden sm:block ${
                   step.completed ? 'bg-blue-500' : 'bg-gray-400'
                 }`}
               />
@@ -55,7 +55,7 @@ const Breadcrumb = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.2 }}
-                className={`absolute -top-1 right-0 w-2 h-2 rounded-full ${
+                className={`absolute -top-1 right-0 w-2 h-2 rounded-full hidden sm:block ${
                   step.completed ? 'bg-blue-500' : 'bg-gray-400'
                 }`}
               />

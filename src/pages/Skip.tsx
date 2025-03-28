@@ -28,7 +28,7 @@ const Skip = () => {
     <div className="container mx-auto py-10 px-5">
       <Breadcrumb />
       <div className="mt-10">
-        <h2 className="text-3xl text-gray-700 font-bold text-center mb-4 font-Merriweather">
+        <h2 className="text-2xl text-gray-700 font-bold text-center mb-4 lg:text-3xl font-Merriweather">
           Choose Your Skip Size
         </h2>
         <p className="text-lg text-gray-500 mb-10 text-center">
@@ -59,7 +59,7 @@ const Skip = () => {
               onClose={() => dispatch(setSelectedSkip(false))}
             >
               <div className="bg-gray-50 w-5xl max-w-3xl rounded-3xl">
-                <div className="rounded-3xl p-10 leading-relaxed shadow-md shadow-blue-500/20 font-Montserrat cursor-pointer border border-gray-200 transition-all duration-500 ease-in-out">
+                <div className="rounded-3xl p-5 lg:p-10 leading-relaxed shadow-md shadow-blue-500/20 font-Montserrat cursor-pointer border border-gray-200 transition-all duration-500 ease-in-out">
                   <div className="border-b border-blue-100 pb-5 flex flex-col justify-between w-full lg:flex-row rounded-t-lg">
                     <p className="bg-blue-50 text-blue-500 border border-blue-300 text-lg lg:text-2xl w-fit h-full py-2 px-5 text-end font-medium self-end mb-1 rounded">
                       {skipData?.size} Yard Skip
