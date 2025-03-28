@@ -6,13 +6,10 @@ import { Loader } from '../componenets/Loader';
 import Modal from '../shared/modal/Modal';
 import { setSelectedSkip } from '../redux/features/skip/skipSlice';
 import AnimateComponent from '../shared/AnimateComponent';
-// import { useState } from 'react';
 import Breadcrumb from '../componenets/Breadcrumb';
 
 const Skip = () => {
   const { selectedSkip, skipData } = useAppSelector((state) => state.skip);
-  // const [isLoading, setIsLoading] = useState(false);
-  // const [isFetching, setIsFetching] = useState(false);
   const dispatch = useAppDispatch();
   const { data, isFetching, isLoading, error, isError } = useGetSkipQuery({
     postcode: 'NR32',

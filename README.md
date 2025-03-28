@@ -17,7 +17,9 @@ This test project is a solution that demonstrates proficiency in building a scal
 
 Ensure you have the following installed:
 
-- Node.js (v20.x.x)
+- Git
+- Node.js
+- npm (Node Package Manager)
 
 ### Installation
 
@@ -75,7 +77,7 @@ Uses re-fetching strategies to keep data fresh.
 
 - Wrap app in Provider inside main.tsx and pass the imported store as props
 
-### **Step 3: Aproach Skip Component**
+### **Step 3: Aproach For Skip Component**
 
 The Skip component is the parent component that makes the Api call to fetch data from the backend server.
 
@@ -101,7 +103,7 @@ The Skip component is the parent component that makes the Api call to fetch data
 
 ---
 
-### **4. Approach for Breadcrumb Component**
+### **4. Approach For Breadcrumb Component**
 
 ### ** Objective**
 
@@ -136,7 +138,7 @@ The breadcrumb visually represents a **step-by-step navigation process**. Each s
 
 - Store steps in an array so the component can handle **any number of steps dynamically**.
 
-## **5. Approach Modal Component**
+## **5. Approach For Modal Component**
 
 ### ** Objective**
 
