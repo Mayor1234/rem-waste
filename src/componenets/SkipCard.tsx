@@ -27,7 +27,7 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip }) => {
         direction={{ initial_x: 0, initial_y: 50, duration: 0.5 }}
       >
         <div
-          className={`rounded-lg leading-relaxed shadow-md shadow-blue-500/20 font-Montserrat cursor-pointer transition-all duration-500 ease-in-out hover:scale-105 ${
+          className={`rounded-lg leading-relaxed shadow-md shadow-blue-500/20 font-Montserrat cursor-pointer border border-gray-200 transition-all duration-500 ease-in-out hover:scale-105 ${
             skipData?.id === skip.id
               ? 'border border-blue-500 transition-transform duration-300 ease-in-out'
               : ''
@@ -39,16 +39,16 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip }) => {
           onClick={handleClick}
         >
           <div className="border-b border-blue-100 px-5 flex flex-col w-full py-3 rounded-t-lg">
-            <p className="bg-blue-50 text-blue-500 border border-blue-300 text-2xl w-fit h-full py-2 px-5 text-end font-medium self-end rounded-3xl mb-3">
+            <p className="bg-blue-50 text-blue-500 border border-blue-300 text-lg lg:text-2xl  w-fit h-full py-2 px-5 text-end font-medium self-end rounded-3xl mb-3">
               {skip.size} Yard Skip
             </p>
             <div className="flex items-end mb-3 text-2xl">
-              <h3
-                className={`text-3xl font-medium text-blue-600 tracking-wide `}
-              >
+              <h3 className="text-lg lg:text-2xl font-medium text-blue-600 tracking-wide">
                 £{skip.price_before_vat}
               </h3>
-              <span className="text-sm text-gray-500 ml-2">per week</span>
+              <span className="text-sm lg:text-base text-gray-500 ml-2">
+                per week
+              </span>
             </div>
           </div>
           <div className="px-5 py-5 flex flex-col gap-1">
@@ -224,7 +224,7 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip }) => {
             </AnimateComponent>
 
             <div className="py-5">
-              {skipData?.id === skip.id ? (
+              {skipData?.id === skip.id && selectedSkip ? (
                 <button
                   type="button"
                   className="border border-blue-500 bg-transparent text-blue-500 w-full rounded-md py-3 mt-2 cursor-pointer font-medium"
