@@ -93,6 +93,8 @@ The Skip component is the parent component that makes the Api call to fetch data
 
 ### ** Steps To Implement Selected Skip**
 
+- Created an array of images and randomly added the images to the cards with: `const randomImg = imgArr[Math.floor(Math.random() * imgArr.length)];`
+
 - Check if a card is selected, if true, check the **id** of the selected card if its equal to the **id** of the oject that was passed as props to the SkipCard component.
 - Track the selected card by adding saving the selected card object in skipData, using Redux createSlice method which accepts an object of **name**, **initial state** and **reducers**.
 - When a card is selected, the selected skip flag is set to true and a smoothly animated modal is pop up to display the properties of the selected card and total cost which is the summation of **Vat** and **price_before_vat**.
