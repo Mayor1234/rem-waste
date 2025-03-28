@@ -19,7 +19,7 @@ const steps = [
 
 const Breadcrumb = () => {
   return (
-    <div className="flex items-center bg-black p-6 space-x-4 rounded-lg">
+    <div className="flex flex-wrap items-center justify-center rounded-lg bg-black p-6 gap-3 md:flex-nowrap">
       {steps.map((step, index) => (
         <div key={index} className="flex items-center">
           <motion.div
