@@ -4,11 +4,9 @@ import { lazy, Suspense } from 'react';
 import { useAppDispatch, useAppSelector } from '../redux/app/hook';
 import SkipCard from '../componenets/SkipCard';
 import { Loader } from '../componenets/Loader';
-// import Modal from '../shared/modal/Modal';
 import { setSelectedSkip } from '../redux/features/skip/skipSlice';
 import AnimateComponent from '../shared/AnimateComponent';
 import Breadcrumb from '../componenets/Breadcrumb';
-
 const Modal = lazy(() => import('../shared/modal/Modal'));
 
 const Skip = () => {
@@ -28,7 +26,7 @@ const Skip = () => {
   }
 
   return (
-    <div className="container mx-auto py-10 px-5">
+    <section className="container mx-auto py-10 px-5">
       <Breadcrumb />
       <div className="mt-10">
         <h2 className="text-2xl text-gray-700 font-bold text-center mb-4 lg:text-3xl font-Merriweather">
@@ -69,7 +67,7 @@ const Skip = () => {
                         {skipData?.size} Yard Skip
                       </p>
                       <div className="flex items-end">
-                        <h3 className="font-medium text-blue-600 tracking-wide text-lg lg:text-2xl">
+                        <h3 className="font-medium text-blue-600 tracking-wide text-md lg:text-2xl">
                           £{skipData?.price_before_vat}
                         </h3>
                         <span className="text-sm lg:text-base text-gray-500 ml-2">
@@ -77,7 +75,7 @@ const Skip = () => {
                         </span>
                       </div>
                     </div>
-                    <div className="flex flex-col gap-1">
+                    <div className="flex flex-col gap-1 py-1">
                       <AnimateComponent
                         direction={{
                           initial_x: 0,
@@ -336,7 +334,7 @@ const Skip = () => {
           )}
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 
