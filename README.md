@@ -98,6 +98,7 @@ The Skip component is the parent component that makes the Api call to fetch data
 - Check if a card is selected, if true, check the **id** of the selected card if its equal to the **id** of the oject that was passed as props to the SkipCard component.
 - Track the selected card by adding saving the selected card object in skipData, using Redux createSlice method which accepts an object of **name**, **initial state** and **reducers**.
 - When a card is selected, the selected skip flag is set to true and a smoothly animated modal is pop up to display the properties of the selected card and total cost which is the summation of **Vat** and **price_before_vat**.
+- To imporve performance and reduce initial bundle size, React.lazy() was used to dynamically import the modal, and Suspense was used to show a loading fallback while the modal is loading.
 - Check if **transport_cost**, **per_tonne_cost**, and area are not equal to null or undefined
 - Check if **allowed_on_road** is equal to false and change the text color to yellow add a warning sign
 - check if **allows_heavy_waste** is equal to false and change the text color to red add a warning sign

@@ -2,9 +2,9 @@ import Skip from './pages/Skip';
 
 function App() {
   return (
-    <div>
+    <main>
       <Skip />
-    </div>
+    </main>
   );
 }
 

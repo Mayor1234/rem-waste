@@ -19,7 +19,7 @@ const steps = [
 
 const Breadcrumb = () => {
   return (
-    <div className="grid place-content-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 rounded-lg bg-black p-6 gap-3">
+    <section className="grid place-content-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 rounded-lg bg-black p-6 gap-3">
       {steps.map((step, index) => (
         <div key={index} className="flex items-center">
           <motion.div
@@ -63,7 +63,7 @@ const Breadcrumb = () => {
           )}
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

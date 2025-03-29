@@ -37,7 +37,7 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip }) => {
       <AnimateComponent
         direction={{ initial_x: 0, initial_y: 50, duration: 0.5 }}
       >
-        <div
+        <article
           className={`rounded-lg leading-relaxed shadow-md shadow-blue-500/20 font-Montserrat cursor-pointer border border-gray-200 transition-all duration-500 ease-in-out hover:scale-105 ${
             skipData?.id === skip.id
               ? 'border border-blue-500 transition-transform duration-300 ease-in-out'
@@ -50,17 +50,19 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip }) => {
           onClick={handleClick}
         >
           <div className="relative">
-            <img
-              src={`/images/${randomImg}`}
-              alt="gravel waste"
-              className="w-full h-80 object-cover object-center rounded-t-lg"
-            />
-            <div className="absolute top-5 right-0 w-fit bg-black/50 text-white text-lg lg:text-xl py-2 px-5 text-end font-medium self-end rounded-tl-lg rounded-bl-lg mb-3">
+            <figure>
+              <img
+                src={`/images/${randomImg}`}
+                alt="gravel waste"
+                className="w-full h-80 object-cover object-center rounded-t-lg"
+              />
+            </figure>
+            <div className="absolute top-5 right-0 w-fit bg-black/50 text-white text-lg lg:text-xl py-2 px-5 text-end font-medium self-end rounded-l-lg mb-3">
               <div className="flex items-end mb-1 text-2xl bg-white px-3 py-1 rounded-lg">
                 <h3 className="text-lg lg:text-2xl font-medium text-blue-600 tracking-wide">
                   £{skip.price_before_vat}
                 </h3>
-                <span className="text-sm lg:text-base text-gray-500 ml-2">
+                <span className="text-sm lg:text-base text-gray-600 ml-2">
                   per week
                 </span>
               </div>
@@ -171,7 +173,7 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip }) => {
               )}
             </div>
           </div>
-        </div>
+        </article>
       </AnimateComponent>
     </>
   );
