@@ -43,7 +43,7 @@ const Skip = () => {
               <Loader />
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-x-4 md:gap-y-8 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-2 md:gap-x-4 md:gap-y-10 lg:grid-cols-3">
               {data &&
                 data.map((skip) => (
                   <div key={skip.id}>
