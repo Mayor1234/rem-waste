@@ -71,7 +71,7 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip }) => {
               <p className="">{skip.size} Yard Skip</p>
             </div>
           </div>
-          <div className="px-5 pt-5 flex flex-col gap-1">
+          <div className="px-5 pt-5 flex flex-col gap-1 h-80">
             {skip.per_tonne_cost && (
               <AnimateComponent
                 direction={{ initial_x: 0, initial_y: 20, duration: 0.6 }}

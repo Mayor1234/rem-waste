@@ -22,7 +22,7 @@ const Skip = () => {
       error && 'status' in error
         ? `Error ${error.status}: ${JSON.stringify(error.data)}`
         : 'An unknown error occurred';
-    return <div className="text-red-500 text-center">{errorMessage}</div>;
+    return <div className="text-red-500 text-center py-5">{errorMessage}</div>;
   }
 
   return (
@@ -43,7 +43,7 @@ const Skip = () => {
               <Loader />
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-x-5 md:gap-y-8 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 md:gap-x-4 md:gap-y-8 lg:grid-cols-4">
               {data &&
                 data.map((skip) => (
                   <div key={skip.id}>
@@ -62,7 +62,7 @@ const Skip = () => {
               >
                 <div className="bg-gray-50 w-5xl max-w-3xl rounded-3xl">
                   <div className="rounded-3xl p-5 lg:p-10 leading-relaxed shadow-md shadow-blue-500/20 font-Montserrat cursor-pointer border border-gray-200 transition-all duration-500 ease-in-out">
-                    <div className="border-b border-blue-100 pb-5 flex flex-col justify-between w-full lg:flex-row rounded-t-lg">
+                    <div className="border-b border-blue-300 pb-5 flex flex-col justify-between w-full lg:flex-row rounded-t-lg md:mb-3">
                       <p className="bg-blue-50 text-blue-500 border border-blue-300 text-lg lg:text-2xl w-fit h-full py-2 px-5 text-end font-medium self-end mb-1 rounded">
                         {skipData?.size} Yard Skip
                       </p>
