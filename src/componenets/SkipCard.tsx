@@ -56,7 +56,7 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip }) => {
                 alt="gravel waste"
                 width={100}
                 height={100}
-                className="w-full h-80 object-cover object-center rounded-t-lg"
+                className="w-full max-h-60 lg:max-h-72 object-cover object-center rounded-t-lg"
               />
             </figure>
             <div className="absolute top-5 right-0 w-fit bg-black/50 text-white text-lg lg:text-xl py-2 px-5 text-end font-medium self-end rounded-l-lg mb-3">
