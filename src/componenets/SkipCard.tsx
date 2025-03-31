@@ -54,6 +54,8 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip }) => {
               <img
                 src={`/images/${randomImg}`}
                 alt="gravel waste"
+                width={100}
+                height={100}
                 className="w-full h-80 object-cover object-center rounded-t-lg"
               />
             </figure>
